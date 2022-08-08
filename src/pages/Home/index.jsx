@@ -1,6 +1,5 @@
 import Newest from "../../components/organisms/Newests"
 import ProductBanner from "../../components/organisms/ProductBanner"
-import ProductBrand from "../../components/organisms/ProductBrand"
 import ProductCategories from "../../components/organisms/ProductCategories"
 import Slideshow from "../../components/organisms/Slideshow"
 
@@ -29,8 +28,6 @@ const Home = () => {
         <>
             <Slideshow images={images.female} />
             <Slideshow images={images.male} />
-
-            {/* <ProductBrand /> */}
 
             <ProductBanner />
 
