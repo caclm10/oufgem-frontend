@@ -18,8 +18,8 @@ const CollectionProducts = () => {
     }, [fetchProducts])
 
     return (
-        <MainContainer py={10}>
-            <Flex justify="flex-end" mb={10}>
+        <MainContainer>
+            <Flex justify="flex-end" py={10}>
                 <FormControl maxW='200px'>
                     <FormLabel>Sort By</FormLabel>
                     <Select>

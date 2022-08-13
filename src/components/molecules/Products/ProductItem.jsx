@@ -50,7 +50,7 @@ const ProductItem = ({ product = null }) => {
                         opacity={isHoveringImage ? 1 : 0}
                     />
                 </Box>
-                <LinkOverlay as={Link} to="/" />
+                <LinkOverlay as={Link} to={`/products/${product.slug}`} />
             </LinkBox>
             <CardContent>
                 <HStack ml={-2} mb={3}>
@@ -72,7 +72,7 @@ const ProductItem = ({ product = null }) => {
                 <Heading as="h6" size="small" mb={3}>
                     <Text
                         as={Link}
-                        to="/"
+                        to={`/products/${product.slug}`}
                         borderBottom="2px solid transparent"
                         transition="border 0.2s, color 0.2s"
                         _hover={{

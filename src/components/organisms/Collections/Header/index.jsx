@@ -3,7 +3,7 @@ import MainContainer from '../../../atoms/MainContainer'
 
 const CollectionHeader = ({ title = 'Products' }) => {
     return (
-        <MainContainer>
+        <MainContainer mb={0}>
             <Box
                 py={10}
                 borderBottom="1px solid"
