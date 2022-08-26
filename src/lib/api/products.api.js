@@ -1,4 +1,6 @@
+import axios from 'axios'
 import { nanoid } from 'nanoid'
+import api from '.'
 import product1_1 from '../../assets/images/product-1.1.png'
 import product1_2 from '../../assets/images/product-1.2.png'
 import product2_1 from '../../assets/images/product-2.1.png'
@@ -121,7 +123,15 @@ const DUMMY_API = {
 }
 
 export const getNewestProducts = async () => {
-    const products = await DUMMY_API.getNewestProducts()
+    // const products = await DUMMY_API.getNewestProducts()
+    const resp = await api.get('products', {
+        params: {
+            limit: 4,
+            image_limit: 2
+        }
+    })
+
+    const { products } = resp.data
 
     return products
 }

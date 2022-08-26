@@ -13,7 +13,7 @@ const CategorySubMenuList = ({
             <Heading as="h5" size="sm" fontSize="15px" mb={5}>
                 <Text
                     as={Link}
-                    to="/"
+                    to={`/collections/${slug}`}
                     _hover={{
                         color: 'brand.default'
                     }}
@@ -30,6 +30,7 @@ const CategorySubMenuList = ({
                         color="black"
                         hoverColor="brand.default"
                         underlineColor="brand.default"
+                        to={`/collections/${type.slug}`}
                     />
                 )}
             </VStack>

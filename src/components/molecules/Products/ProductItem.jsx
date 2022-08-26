@@ -28,7 +28,7 @@ const ProductItem = ({ product = null }) => {
                     h="full"
                 >
                     <Image
-                        src={images[0]}
+                        src={images[0]?.url}
                         alt="product"
                         w="full"
                         h="400px"
@@ -39,7 +39,7 @@ const ProductItem = ({ product = null }) => {
                         opacity={isHoveringImage ? 0 : 1}
                     />
                     <Image
-                        src={images[1]}
+                        src={images[1]?.url}
                         alt="product"
                         w="full"
                         h="400px"
